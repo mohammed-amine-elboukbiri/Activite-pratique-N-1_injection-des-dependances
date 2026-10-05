@@ -8,7 +8,8 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Scanner;
 
 public class Pres2 {
-    public static void main (String[] args) throws FileNotFoundException, ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException {
+    // FileNotFoundException, ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException
+    public static void main (String[] args) throws Exception {
         Scanner scanner = new Scanner(new File("config.txt"));
 
         String daoClassName = scanner.nextLine();
