@@ -14,7 +14,7 @@ public class Pres1 {
 
         //injection statique par constructuer
 
-        MetierImp metier = new MetierImp(dao);
+        //MetierImp metier = new MetierImp(dao);
 
 
         /* injection statique par setter
@@ -22,7 +22,7 @@ public class Pres1 {
         metier.setDao(dao);
         */
 
-        System.out.println("Le resultat est : " + metier.calcul());
+        //System.out.println("Le resultat est : " + metier.calcul());
 
     }
 }

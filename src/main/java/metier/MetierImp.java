@@ -12,14 +12,15 @@ public class MetierImp implements IMetier {
         return res;
     }
 
-    //injection statique par constructuer
+    /*injection statique par constructuer
     public MetierImp(IDao dao) {
         this.dao = dao;
     }
+    */
 
-    /* injection statique par setter
+    // injection statique par setter
     public void setDao(IDao dao) {
         this.dao = dao;
     }
-    */
+
 }
