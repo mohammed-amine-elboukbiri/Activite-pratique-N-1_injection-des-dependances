@@ -20,14 +20,15 @@ public class Pres2 {
 
         String metierClassName = scanner.nextLine();
         Class Cmetier = Class.forName(metierClassName);
-        
-        //instantion via le constructeur
-        //IMetier metier = (IMetier) Cmetier.getConstructor(IDao.class).newInstance(dao);
 
-        // instantion via le setter
+        //instantion via le constructeur
+        IMetier metier = (IMetier) Cmetier.getConstructor(IDao.class).newInstance(dao);
+
+        /* instantion via le setter
         IMetier metier = (IMetier) Cmetier.getConstructor().newInstance();
         Method SetDao = Cmetier.getDeclaredMethod("setDao", IDao.class);
         SetDao.invoke(metier,dao);
+         */
 
         System.out.println("Le resultat est :"+metier.calcul());
     }
